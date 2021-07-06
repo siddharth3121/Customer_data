@@ -1,0 +1,45 @@
+CREATE TABLE [dbo].[Customer_data](
+	[CustomerId] [int] NULL,
+	[CustomerName] [nvarchar](500) NULL,
+	[Address_1] [nvarchar](500) NULL,
+	[Address_2] [nvarchar](500) NULL,
+	[Address_3] [nvarchar](500) NULL,
+	[City] [nvarchar](500) NULL,
+	[State] [nvarchar](500) NULL,
+	[PIN] [nvarchar](50) NULL,
+	[BankName] [nvarchar](500) NULL,
+	[AccountNumber] [nvarchar](500) NULL,
+	[PAN_No] [nvarchar](50) NULL,
+	[Bill_No] [nvarchar](50) NULL,
+	[Amount] [nvarchar](50) NULL,
+	[Status] [nvarchar](50) NULL,
+	[ApproveorReject] [nvarchar](50) NULL
+)
+
+
+USE [Customer_data]
+GO
+
+/****** Object:  Table [dbo].[Usertable]    Script Date: 06-07-2021 12:03:40 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Usertable](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Name] [nvarchar](50) NOT NULL,
+	[Username] [nvarchar](500) NOT NULL,
+	[Password] [nvarchar](500) NOT NULL,
+	[Role] [nvarchar](500) NOT NULL,
+ CONSTRAINT [PK_Usertable] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
+ 
+
